@@ -1,12 +1,10 @@
 -- ============================================================
 -- Car Rental Agency — Database Schema
 -- ============================================================
-
-CREATE DATABASE IF NOT EXISTS `car_rental_db`
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_unicode_ci;
-
-USE `car_rental_db`;
+-- NOTE: Run this SQL inside your already-created database.
+-- On shared hosting (InfinityFree, Hostinger etc.) create the
+-- database via cPanel first, then import this file via phpMyAdmin.
+-- ============================================================
 
 -- ------------------------------------------------------------
 -- Table: customers

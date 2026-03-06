@@ -7,13 +7,16 @@
 
 declare(strict_types=1);
 
+// Hide errors from visitors in production
+ini_set('display_errors', '0');
+error_reporting(0);
+
 // ── Database credentials ──────────────────────────────────────────────────────
-// Use 127.0.0.1 (TCP) instead of 'localhost' (UNIX socket) so PHP's MySQLi
-// can connect without the default socket path configured.
-define('DB_HOST', '127.0.0.1');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'car_rental_db');
+// InfinityFree production credentials
+define('DB_HOST', 'sql100.infinityfree.com');
+define('DB_USER', 'if0_41321331');
+define('DB_PASS', 'Car437896');    // ← your InfinityFree login password
+define('DB_NAME', 'if0_41321331_car_rental');
 
 // ── Application base URL ──────────────────────────────────────────────────────
 // Set to '' when the app is served from the web root (e.g. http://localhost:8000)
